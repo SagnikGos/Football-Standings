@@ -9,7 +9,7 @@ const API_KEY = process.env.FOOTBALL_API_KEY;
 
 // Redis Client
 const redisClient = redis.createClient({
-    url: process.env.REDIS_URL, // Set in .env
+    url: process.env.REDIS_URL, 
 });
 
 redisClient.connect().catch(console.error);
