@@ -2,6 +2,11 @@ require("dotenv").config();
 const express = require("express");
 const axios = require("axios");
 const redis = require("redis");
+const cors = require("cors");
+
+
+
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -15,6 +20,7 @@ const redisClient = redis.createClient({
 redisClient.connect().catch(console.error);
 
 // Middleware
+app.use(cors());
 app.use(express.json());
 
 // Get Standings with Caching
