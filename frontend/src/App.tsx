@@ -66,13 +66,13 @@ const themeToggleStyles = `
 `;
 
 const App = () => {
-  const [competitions, setCompetitions] = useState<Competition[]>([
+  const competitions = useState<Competition[]>([
     { id: 2021, name: 'Premier League', code: 'PL' },
     { id: 2014, name: 'La Liga', code: 'PD' },
     { id: 2019, name: 'Serie A', code: 'SA' },
     { id: 2002, name: 'Bundesliga', code: 'BL1' },
     { id: 2015, name: 'Ligue 1', code: 'FL1' }
-  ]);
+  ])[0];
   
   const [selectedCompetition, setSelectedCompetition] = useState<string>('2021');
   const [standings, setStandings] = useState<StandingsResponse | null>(null);
