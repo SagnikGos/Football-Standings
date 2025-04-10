@@ -8,7 +8,7 @@ import { Button } from './components/ui/button';
 import { Moon, Sun } from 'lucide-react';
 
 interface Team {
-  id: number;
+  id: string;
   name: string;
   shortName: string;
   tla: string;
