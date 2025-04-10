@@ -88,7 +88,7 @@ const App = () => {
       setError(null);
       
       try {
-        const response = await fetch(`http://localhost:5000/standings/${selectedCompetition}`);
+        const response = await fetch(`https://football-standings-6ucz.onrender.com/standings/${selectedCompetition}`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch standings');
