@@ -21,7 +21,6 @@ A modern and responsive web application to view live football league standings u
 **Backend**
 - Node.js
 - Express.js
-- MongoDB
 - Redis (for caching)
 - Football-Data.org API
 
